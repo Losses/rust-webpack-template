@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: ["static/index.html"],
+      patterns: [path.resolve(__dirname, "static")],
     }),
 
     new WasmPackPlugin({
